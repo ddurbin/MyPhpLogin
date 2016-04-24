@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - TestDB@localhost" uuid="1d513109-4b58-445d-9f55-ed8c03d9ef98">
+    <database-info product="MySQL" version="5.7.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="TestDB"/>
+      <table id="2" parent="1" name="Users"/>
+      <column id="3" parent="2" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="4" parent="2" name="username">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="5" parent="2" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="6" parent="2" name="active_user">
+        <mandatory>1</mandatory>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;Y&apos;</default-expression>
+      </column>
+      <column id="7" parent="2" name="logged_in">
+        <mandatory>1</mandatory>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <index id="8" parent="2" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="9" parent="2" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="10" parent="2" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>

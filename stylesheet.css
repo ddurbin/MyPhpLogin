@@ -1,0 +1,100 @@
+div.outer {
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	border: white solid;
+}
+
+div.inner {
+
+	width: 200px;
+	height: 100px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#witherror {
+	display: inline-block;
+}
+
+.error {
+	color: red;
+}
+
+/*div {*/
+    /*height:100px;*/
+    /*width:100px;*/
+    /*display: inline-block;*/
+/*}*/
+
+.button {
+	height: 30px;
+	line-height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #69D2E7;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    opacity: 0.5;
+}
+
+#content {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+}
+
+div.outercontainer {
+	width: 100vw;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+div.innercontainer {
+	width: 500px;
+	height: 300px;
+	background-color: yellow;
+	box-shadow: 10px 10px  5px grey;
+}
+
+a{
+	color: white;
+}
+
+#grad {
+	height: 100px;
+	width: 100vw;
+	line-height: 100px;
+	text-align: center;
+	text-shadow: 2px 2px white;
+	font-size: 60px;
+  	background: black; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(bottom,black,white); /*Safari 5.1-6*/
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#red {
+    background-color:#FF0000;
+}
+
+#blue {
+    background-color:#0000FF;
+}
+
+#yellow {
+    background-color:#E2BE22;
+}
+
+#green {
+    background-color:#008800;
+}
