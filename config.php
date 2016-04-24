@@ -37,7 +37,9 @@
 	}
 
     function getDBConnection() {
-        $dbconn = new mysqli(HOST, DBUSERNAME, DBPASSWORD, DB);
+        if (!isset($dbconn)){
+            $dbconn = new mysqli(HOST, DBUSERNAME, DBPASSWORD, DB);
+        }
         return $dbconn;
     }
 
@@ -50,7 +52,7 @@
  * args param is a key->value array for binding query params
  * where key = arg object and value = arg type
  * ex: [&$username->"s", 1->"i",.....]
- * @return result of query
+ * @return object $result
  */
     function executeSQLIStatement($query, array $types, array $params) {
         $link = getDBConnection();
