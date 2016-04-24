@@ -16,6 +16,8 @@
     //current User
     define('USER', null);
 
+    //this is a test of the VCS system....
+
 	//function to return File pointer to orders.txt
 	function getFileForWrite() {
 		$DOCUMENT_ROOT = $_SERVER["DOCUMENT_ROOT"];
@@ -35,9 +37,7 @@
 	}
 
     function getDBConnection() {
-        if (!$dbconn) {
-            $dbconn = new mysqli(HOST, DBUSERNAME, DBPASSWORD, DB);
-        }
+        $dbconn = new mysqli(HOST, DBUSERNAME, DBPASSWORD, DB);
         return $dbconn;
     }
 
